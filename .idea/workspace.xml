@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7358feb5-a3e0-4c9f-8b58-92cc46c290cc" name="Default Changelist" comment="" />
+    <list default="true" id="7358feb5-a3e0-4c9f-8b58-92cc46c290cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/AndroidReflect.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/AndroidReflect.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/reflecct/AndroidReflect.reflecct.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/classes/java/main/com/utopia/reflecct/core/RealReflect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/classes/java/main/com/utopia/reflecct/core/Reflect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/classes/java/main/com/utopia/reflecct/core/ReflectConstructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/classes/java/main/com/utopia/reflecct/core/ReflectField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/classes/java/main/com/utopia/reflecct/core/ReflectMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/classes/java/main/com/utopia/reflecct/core/ReflectProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/classes/java/main/com/utopia/reflecct/utils/AssertUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/classes/java/main/com/utopia/reflecct/utils/ReflectException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/classes/java/test/com/bjzjmy/utils/reflect/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/classes/java/test/com/bjzjmy/utils/reflect/ExampleUnitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/classes/java/test/com/bjzjmy/utils/reflect/ReflectTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflecct/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +44,18 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,6 +76,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Documents/Sdk" />
@@ -40,8 +85,16 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/reflecct/src" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.23096447" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Default Config" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -59,7 +112,7 @@
       <recent name="D:\github\AndroidReflect\reflecct\src\main\java\com\utopia\reflecct" />
     </key>
   </component>
-  <component name="RunManager" selected="Android JUnit.ReflectTest.testUseTime">
+  <component name="RunManager" selected="Android JUnit.ReflectTest">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -94,7 +147,7 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
     <configuration name="ReflectTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AndroidReflect.reflecct" />
+      <module name="AndroidReflect.reflect" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bjzjmy.utils.reflect.*" />
@@ -110,7 +163,7 @@
       </method>
     </configuration>
     <configuration name="ReflectTest.on" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AndroidReflect.reflecct" />
+      <module name="AndroidReflect.reflect" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bjzjmy.utils.reflect.*" />
@@ -127,7 +180,7 @@
       </method>
     </configuration>
     <configuration name="ReflectTest.testUseTime" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AndroidReflect.reflecct" />
+      <module name="AndroidReflect.reflect" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bjzjmy.utils.reflect.*" />
@@ -224,8 +277,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.ReflectTest.testUseTime" />
         <item itemvalue="Android JUnit.ReflectTest" />
+        <item itemvalue="Android JUnit.ReflectTest.testUseTime" />
         <item itemvalue="Android JUnit.ReflectTest.on" />
       </list>
     </recent_temporary>
@@ -244,6 +297,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="286" y="158" key="#PSD" timestamp="1615346479036">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="286" y="158" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1615346479036" />
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1615342908880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -252,22 +309,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1615339572550" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1615343533825">
+    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1615346440616">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615343533825" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1615343533825">
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615346440616" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1615346490816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615343533825" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1615343533825">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615346490816" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1615346490816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615343533825" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1615343533825">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615346490816" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1615346490815">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615343533825" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615346490815" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1615346490816">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615346490816" />
     <state x="270" y="56" key="SettingsEditor" timestamp="1615284076503">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

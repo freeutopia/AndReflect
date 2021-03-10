@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidReflect.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidReflect.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidReflect.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidReflect.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reflecct/AndroidReflect.reflecct.iml" filepath="$PROJECT_DIR$/.idea/modules/reflecct/AndroidReflect.reflecct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reflecct/AndroidReflect.reflect.iml" filepath="$PROJECT_DIR$/.idea/modules/reflecct/AndroidReflect.reflect.iml" />
     </modules>
   </component>
 </project>
