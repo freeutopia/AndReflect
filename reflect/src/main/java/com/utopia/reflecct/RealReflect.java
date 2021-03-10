@@ -1,14 +1,17 @@
-package com.utopia.reflecct.core;
+package com.utopia.reflecct;
 
 
+import com.utopia.reflecct.handle.ConstructorHandle;
+import com.utopia.reflecct.handle.FieldHandle;
+import com.utopia.reflecct.handle.MethodHandle;
+import com.utopia.reflecct.interfaces.IReflect;
 import com.utopia.reflecct.utils.AssertUtils;
 import com.utopia.reflecct.utils.ReflectException;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-class RealReflect implements Reflect{
+class RealReflect implements IReflect {
     private final Class<?> mClazz;
 
     RealReflect(String className) throws ReflectException {
@@ -21,42 +24,40 @@ class RealReflect implements Reflect{
     }
 
     RealReflect(Class<?> clazz) {
+        AssertUtils.checkMemberAccess(clazz, "Class can not be null!");
         this.mClazz = clazz;
     }
+    
 
     @Override
-    public <T> ReflectConstructor<T> constructor(Class<?>... types) throws ReflectException {
+    public ConstructorHandle constructor(Class<?>... types) throws ReflectException {
         AssertUtils.checkMemberAccess(mClazz, "Reflect class can not be null!");
         try {
-            Constructor<?> constructor = mClazz.getDeclaredConstructor(types);
-            return (ReflectConstructor<T>) ReflectConstructor.create(constructor);
+            return ConstructorHandle.create(mClazz.getDeclaredConstructor(types));
         } catch (Exception e) {
-            throw new ReflectException(e);
+            return ConstructorHandle.createEmpty();
         }
     }
 
     @Override
-    public ReflectMethod method(String methodName, Class<?>... parameterTypes) throws ReflectException {
+    public MethodHandle method(String methodName, Class<?>... parameterTypes) throws ReflectException {
         AssertUtils.checkMemberAccess(methodName, "MethodName can not be empty!");
         AssertUtils.checkMemberAccess(mClazz, "Reflect class can not be null!");
 
         try {
-            Method method = mClazz.getDeclaredMethod(methodName, parameterTypes);
-            return ReflectMethod.create(method);
+            return MethodHandle.create(mClazz.getDeclaredMethod(methodName, parameterTypes));
         } catch (Exception e) {
-            throw new ReflectException(e);
+            return MethodHandle.createEmpty();
         }
     }
 
     @Override
-    public ReflectField field(String fieldName) throws ReflectException {
-        AssertUtils.checkMemberAccess(fieldName, "FieldName can not be empty!");
+    public FieldHandle field(String fieldName) {
         AssertUtils.checkMemberAccess(mClazz, "Reflect class can not be null!");
         try {
-            Field field = mClazz.getDeclaredField(fieldName);
-            return ReflectField.create(field);
+            return FieldHandle.create(mClazz.getDeclaredField(fieldName));
         } catch (Exception e) {
-            throw new ReflectException(e);
+            return FieldHandle.createEmpty();
         }
     }
 }

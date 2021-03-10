@@ -1,24 +1,27 @@
-package com.utopia.reflecct.core;
+package com.utopia.reflecct.handle;
 
 import com.utopia.reflecct.utils.AssertUtils;
 import com.utopia.reflecct.utils.ReflectException;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
-public final class ReflectConstructor<T> {
-    private final Constructor<T> constructor;
+public final class ConstructorHandle {
+    private final Constructor constructor;
 
-    private ReflectConstructor(Constructor<T> constructor) {
+    private ConstructorHandle(Constructor constructor) {
         this.constructor = constructor;
     }
 
-    static <T> ReflectConstructor<T> create(Constructor<T> constructor) {
+    public static <T> ConstructorHandle create(Constructor<T> constructor) {
         constructor.setAccessible(true);
-        return new ReflectConstructor<T>(constructor);
+        return new ConstructorHandle(constructor);
     }
 
-    public Constructor<T> obtain() {
+    public static ConstructorHandle createEmpty() {
+        return new ConstructorHandle(null);
+    }
+
+    public Constructor obtain() {
         return constructor;
     }
 

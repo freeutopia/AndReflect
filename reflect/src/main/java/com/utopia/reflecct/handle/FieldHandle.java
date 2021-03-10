@@ -1,4 +1,4 @@
-package com.utopia.reflecct.core;
+package com.utopia.reflecct.handle;
 
 import com.utopia.reflecct.utils.AssertUtils;
 import com.utopia.reflecct.utils.ReflectException;
@@ -7,16 +7,20 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 
-public final class ReflectField {
+public final class FieldHandle {
     private final Field field;
 
-    private ReflectField(Field field) {
+    private FieldHandle(Field field) {
         this.field = field;
     }
 
-    static ReflectField create(Field field) {
+    public static FieldHandle create(Field field) {
         field.setAccessible(true);
-        return new ReflectField(field);
+        return new FieldHandle(field);
+    }
+
+    public static FieldHandle createEmpty() {
+        return new FieldHandle(null);
     }
 
     public Field obtain() {
@@ -38,13 +42,13 @@ public final class ReflectField {
     }
 
     public Object get(Object target) throws ReflectException{
-        AssertUtils.checkMemberAccess(field,"Field can not be null!");
-
-        if (target == null && (field.getModifiers() & Modifier.STATIC) == 0) {
-            throw new ReflectException("field is not static!");
-        }
-
         try {
+            //target == null代表访问我的是static属性
+            //getModifiers是获取属性修饰符，具体枚举值请参见：java.lang.reflect.Modifier类
+            if (target == null && (field.getModifiers() & Modifier.STATIC) == 0) {
+                throw new ReflectException("field is not static!");
+            }
+
             return field.get(target);
         } catch (Exception e) {
             throw new ReflectException(e);
