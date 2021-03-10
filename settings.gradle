@@ -1,0 +1,3 @@
+include ':reflecct'
+include ':app'
+rootProject.name = "AndroidReflect"
