@@ -67,3 +67,23 @@ System.out.println(testStr);//输出hello world !
 value[0] = 'H';
 System.out.println(testStr);//输出Hello world !
 ```
+
+### 4. AndroidP适配，需要在application里加入以下代码块
+
+```
+static {
+        if (SDK_INT >= Build.VERSION_CODES.P) {
+
+            Reflect reflect = Reflect.on(Class.class);
+            MethodHandle forName = reflect.method("forName", String.class);
+            MethodHandle getDeclaredMethod = reflect.method("getDeclaredMethod", String.class, Class[].class);
+
+            Class<?> vmRuntimeClass = (Class<?>) forName.call(null, "dalvik.system.VMRuntime");
+            Method getRuntime = (Method) getDeclaredMethod.call(vmRuntimeClass, "getRuntime", null);
+            MethodHandle getRuntimeMethod = MethodHandle.create(getRuntime);
+            getDeclaredMethod.call(vmRuntimeClass, "setHiddenApiExemptions", new Class[]{String[].class});
+            getRuntimeMethod.call(null);
+
+        }
+    }
+```
