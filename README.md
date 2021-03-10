@@ -1,6 +1,14 @@
 # AndroidReflect
 
 
+
+```
+//添加依赖配置
+dependencies {
+    implementation 'com.utopia:reflecct:1.0.0'
+}
+```
+
 ##基本使用方法
 ***
 ### 1. Reflect接口
