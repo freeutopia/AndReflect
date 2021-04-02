@@ -1,14 +1,21 @@
 package com.utopia.reflecct;
 
+import android.util.Log;
+
 import com.utopia.reflecct.handle.ConstructorHandle;
 import com.utopia.reflecct.handle.FieldHandle;
 import com.utopia.reflecct.handle.MethodHandle;
 import com.utopia.reflecct.interfaces.IReflect;
+import com.utopia.reflecct.utils.AndroidUtils;
 import com.utopia.reflecct.utils.AssertUtils;
 import com.utopia.reflecct.utils.ReflectException;
 
 public class Reflect implements IReflect {
     private final IReflect mReflect;
+
+    static {
+        AndroidUtils.fitAndroidP();
+    }
 
     private Reflect(IReflect reflect) {
         this.mReflect = reflect;

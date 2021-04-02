@@ -27,7 +27,7 @@ class RealReflect implements IReflect {
         AssertUtils.checkMemberAccess(clazz, "Class can not be null!");
         this.mClazz = clazz;
     }
-    
+
 
     @Override
     public ConstructorHandle constructor(Class<?>... types) throws ReflectException {

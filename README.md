@@ -1,6 +1,14 @@
 # AndroidReflect
 
 
+
+```
+//添加依赖配置
+dependencies {
+    implementation 'com.utopia:reflecct:1.0.0'
+}
+```
+
 ##基本使用方法
 ***
 ### 1. Reflect接口
@@ -66,4 +74,10 @@ char[] value = (char[]) Reflect.on(testStr.getClass()).field("value").get(testSt
 System.out.println(testStr);//输出hello world !
 value[0] = 'H';
 System.out.println(testStr);//输出Hello world !
+```
+
+### 4. AndroidP适配
+
+```
+已完成，不需要额外代码
 ```

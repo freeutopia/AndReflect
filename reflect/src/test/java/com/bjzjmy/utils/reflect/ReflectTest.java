@@ -1,8 +1,11 @@
 package com.bjzjmy.utils.reflect;
 
 import com.utopia.reflecct.Reflect;
+import com.utopia.reflecct.handle.MethodHandle;
 
 import org.junit.jupiter.api.Test;
+
+import java.lang.reflect.Method;
 
 
 public class ReflectTest {
@@ -45,5 +48,10 @@ public class ReflectTest {
             on.method("show2").call(demo);
         }
         System.out.println("执行方法耗时："+(System.currentTimeMillis()-startTime)+"ms");
+    }
+
+    @Test
+    public void androidP(){
+
     }
 }
