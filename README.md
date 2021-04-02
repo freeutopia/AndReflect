@@ -76,6 +76,7 @@ value[0] = 'H';
 System.out.println(testStr);//输出Hello world !
 ```
 
+<<<<<<< HEAD
 ### 4. AndroidP适配
 
 ```
